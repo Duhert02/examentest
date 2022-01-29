@@ -44,6 +44,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Build
-        run: docker build -t ${{secrets.DOCKER_USER}}/examentest/examentest .
+        run: docker build -t ${{secrets.DOCKER_USER}}/examentest .
       - name: Push
         run: docker push ${{secrets.DOCKER_USER}}/examentest:latest
